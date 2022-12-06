@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styling.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik+Distressed&display=swap" rel="stylesheet"> 
+  <body>
+  <div class="page-wrapper">
+  <section class="hero">
+    <h1 id="txtlogo">THE&nbsp;BOULDERING&nbsp;PIT</h1>
+    <div class="nav">
+      <ul>
+        <li style="--clr:#2e8ca3"><a href="#about" data-text="&nbsp;ABOUT&nbsp;THE&nbsp;GYM&nbsp;">&nbsp;ABOUT&nbsp;THE&nbsp;GYM&nbsp;</a></li>
+            <li style="--clr:#2e8ca3"><a href="#start" data-text="&nbsp;GETTING&nbsp;STARTED&nbsp;">&nbsp;GETTING&nbsp;STARTED&nbsp;</a></li>
+            <li style="--clr:#2e8ca3"><a href="#train" data-text="&nbsp;TRAINING&nbsp;">&nbsp;TRAINING&nbsp;</a></li>
+            <li style="--clr:#2e8ca3"><a href="#contact" data-text="&nbsp;CONTACT&nbsp;">&nbsp;CONTACT&nbsp;</a></li>
+      </ul>
+    </div>
+    <picture class="hero-picture">
+      <img src="assets/hero-img.jpg" alt="woman climbing indoor lead climbing">
+    </picture>
+    <img id="divider-1" src="assets/divider-top.svg">
+    <div class="socials">
+      <img src="assets/icons8-facebook.svg" alt="Facebook icon">
+      <img src="assets/icons8-instagram.svg" alt="Instagram icon">
+      <img src="assets/icons8-tiktok.svg" alt="TikTok icon">
+    </div>
+  </section>
+  <section id="about">
+    <h2>The Bouldering Pit - bouldering paradise for everyone</h2>
+    <div class="carousel">
+      <div class="car-img" style="background-image: url('assets/carousel-1.jpg');"></div>
+      <div class="car-img" style="background-image: url('assets/carousel-2.jpg');"></div>
+      <div class="car-img" style="background-image: url('assets/carousel-3.jpg');"></div>
+      <div class="car-img" style="background-image: url('assets/carousel-4.jpg');"></div>
+      <div class="car-img"  style="background-image: url('assets/carousel-5.jpg');"></div>
+    </div>
+    <button id="prev" onclick="carouselLeft()"><img src="assets/arrowleft.svg" alt="arrow to the left"></button>
+    <button id="next" onclick="carouselRight()"><img src="assets/arrowleft.svg" alt="arrow to the right"></button>
+  </section>
+  <section id="start">
+    <div class="slide">
+      <br>
+      <h2>How to get started?</h2>
+      <br>
+      <div class="card-wrapper">
+        <div class="slidingcard slide">
+          <h3>Introduction</h3>
+          <p>All climbing areas are prottected by padded floors that are thich enough to absorb impact from falls. As with any sport, there are risks to bouldering. Please climb with caution!</p>
+          <h4>Click to read more...</h4>
+        </div>
+        <div class="slidingcard slide">
+          <h3>Spotting</h3>
+          <p>Goal is to guide a falling climber and NOT catch them! Follow the climber's torso with your hands and eyes.</p>
+          <h4>Click to read more...</h4>
+      </div>
+      <div class="slidingcard slide">
+        <h3>Falling</h3>
+        <p>Sight your landing and try to land on your feet before making impact with other body part. You should land with equal weight on both feet with your knees slightly bent.</p>
+        <h4>Click to read more...</h4>
+      </div>
+      <div class="slidingcard slide">
+        <h3>Gym Hazards</h3>
+        <p>Always be aware of climbers on the walls around you. Maintain a safe distance. Avoid cutting closely around sharp corners or underneath overhangs and be aware of walls behind you.</p>
+        <h4>Click to read more...</h4>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="train">
+    <h2>Training and certification</h2>
+    <div class="card-wrapper">
+    <div class="card">
+      <h3>Beginners</h3>
+      <img src="assets/beginner.jpg" alt="beginner climbing training">
+      <p>First time climbing?</p>
+      <button class="card-btn">Join now!</button>
+    </div>
+    <div class="card">
+      <h3>Advanced</h3>
+      <img src="assets/advanced.jpg" alt="advanced climbing training">
+      <p>Seasoned climber?</p>
+      <button class="card-btn">Join now!</button>
+    </div>
+    <div class="card">
+      <h3>Routesetting</h3>
+      <img src="assets/carousel-a.jpg" alt="blabla">
+      <p>Having ideas for boulder problems?</p>
+      <button class="card-btn">Start building</button>
+    </div>
+    <div class="card">
+      <h3>Belay</h3>
+      <img src="assets/belay.jpg" alt="belay certification course">
+      <p>Interested in belay certification?</p>
+      <button class="card-btn">Book a spot!</button>
+    </div>
+  </div>
+  </section>
+</div>
+  <footer id="contact">
+      <div id="map" class="footer-column">
+        <h3>Find us</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.5944997733654!2d9.480833715920241!3d55.48716508048315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9f7876f6d0dd%3A0x5bccb923345cdbeb!2sSyddansk%20Universitet%20Kolding!5e0!3m2!1sen!2spl!4v1670178019742!5m2!1sen!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    <div class="footer-column">
+      <h3>Opening hours</h3>
+      <div class="inside-column">
+        <ul>
+          <li>Monday: 8:00-22:00</li>
+          <li>Tuesday: 8:00-22:00</li>
+          <li>Wednesday: closed</li>
+          <li>Thursday: 8:00-22:00</li>
+          <li>Friday: 8:00-22:00</li>
+          <li>Saturday: 8:00-22:00</li>
+          <li>Sunday: 8:00-22:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Contact us</h3>
+      <div class="inside-column">
+        <ul>
+          <li>Phone: +48 123456789</li>
+          <li>Email: bouldering@pit.pl</li>
+        </ul>
+      </div>
+    </div>
+    <img id="footer-svg" src="assets/map-bg.svg">
+</footer>
+</body>
