@@ -97,12 +97,14 @@
   }
 
   #txtlogo{
-    font-size: 9vh;
+    max-width: 100%;
+    font-size: clamp(3rem, 20vw, 6rem);
     font-family: 'Rubik Distressed', cursive;
     text-align: center;
-    position: absolute;
-    left: 43%;
-    transform: translateX(-45%);
+    position: relative;
+    /* position: absolute; */
+    /* left: 43%; */
+    /* transform: translateX(-45%); */
     top: 1rem;
     z-index: 1;
   }
@@ -455,6 +457,7 @@
   
   .map-grid > iframe{
     width: 100%;
+    min-height: 600px;
     height: max-content;
     display: block;
     z-index: 1;
